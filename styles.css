@@ -1,0 +1,140 @@
+body,html{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+
+header{
+    display: flex;
+    height:64px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+header nav{
+    display: flex;
+    list-style: none;
+    width:100%;
+    padding:0 5%; 
+    justify-content: space-evenly;
+}
+header nav:first-child{
+    padding-right: 2%;
+}
+header nav:last-child{
+    padding-left: 2%;
+}
+header img{
+    height: 80%;
+}
+header nav li{
+    color:rgb(196, 196, 196);
+    font-weight:100;
+    font-size: 0.8rem;
+}
+
+.section.top{
+    text-align: center;
+    color: #ffffff;
+    background-color: black;
+}
+.section.top .content{
+    padding:0 10%;
+    max-width: 60%;
+    margin: 0 auto;
+}
+.section.top .content h1{
+    margin-top: 0px;
+}
+.section.top .content p{
+    font-size: 0.8rem;
+    color:#eeeeee;
+}
+.gallery {
+    padding: 30px 0;
+}
+
+.gallery-cell {
+    width: 50%;
+    height: 300px;
+    margin-right: 20px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+    background-size: cover;
+    background-position: center center;
+}
+
+button{
+    padding:10px 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background: none;
+}
+
+.section.top button{
+    border: 0.5px solid white;
+    color:white;
+    margin: 30px 10px;
+    margin-top: 10px;
+}
+
+.section.top button.blue-highlight{
+    background-image: linear-gradient(120deg,#6D13D6,#18E1F9) ;
+    border: none;
+    padding: 10.5px 20.5px;
+}
+
+
+.section.two{
+    padding:2vw 10vw;
+}
+.section.two .container{
+    display: grid;
+    grid-auto-rows: 300px;
+    grid-gap: 30px;
+}
+.section.two .container > div:nth-child(odd){
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.section.two .container > div:nth-child(even){
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.section.two .container img, .section.two .container .image{
+    height:100%;
+    width:100%;
+    position: relative;
+}
+.section.two .container > div:nth-child(odd) img{
+    place-self: end;
+}
+.section.two .container > div:nth-child(odd) image::after{
+    content:'';
+    display: block;
+    position: absolute;
+    height:10px;
+    width:10px;
+    background-color: #6D13D6;
+    bottom: 0;
+    right:-10px;
+}
+
+@media screen and (max-width:760px){
+    .section.top .content{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .gallery-cell{
+        width:80%;
+    }
+}
