@@ -639,6 +639,8 @@ footer .links .main-links a{
     }
     footer .links{
         padding-left: 0;
+    }
+    footer .main-links{
         text-align: center;
     }
 }
@@ -680,8 +682,8 @@ footer .links .main-links a{
         grid-template-rows: max-content max-content;
     }
     .section.eight{
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
     .section.eight .inline>div{
         padding:10px 0;
