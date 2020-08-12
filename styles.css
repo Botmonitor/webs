@@ -187,7 +187,7 @@ header nav.mobile li:not(:last-child)::after{
     width: 50%;
     height: 300px;
     margin-right: 20px;
-    background: #8C8;
+    background: #000;
     counter-increment: gallery-cell;
     background-size: cover;
     background-position: center center;
