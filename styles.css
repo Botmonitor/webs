@@ -647,6 +647,10 @@ footer .links .main-links a{
     header nav{
         display: none;
     }
+    header img{
+        margin-left: 5vw;
+        height:45px;
+    }
     header nav.mobile{
         display: flex;
         height:0;
@@ -675,16 +679,43 @@ footer .links .main-links a{
         grid-template-columns: 1fr;
         grid-template-rows: max-content max-content;
     }
-    
+    .section.eight{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .section.eight .inline>div{
+        padding:10px 0;
+        width: 145px;
+    }
+    .section.eight .inline>div .icon{
+        height:30px;
+        width:30px;
+    }
+    .section.eight .inline>div>div:last-child{
+        height: max-content;
+        padding-left:0px;
+    }
+    .section.eight .inline>div>div h5{
+        margin: 0;
+        font-size: 1rem;
+    }
+    .section.eight .inline>div>div p{
+        margin-top: 3px;
+        margin-bottom: 0;
+        font-size:0.8rem;
+    }
     footer .links{
         display: grid;
-        padding-left:30px;
+        padding-left:0px;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,max-content);
     }
     footer .links .main-links{
         padding:10px 0;
         grid-column: span 2;
+    }
+    .section.five .inline{
+        padding-left: 0;
     }
 }
 @media screen and (max-width:360px){
