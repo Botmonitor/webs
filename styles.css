@@ -418,7 +418,7 @@ button.blue-highlight, .section.top button.blue-highlight{
     grid-auto-rows: max-content;
 }
 .profile-gallery-cell{
-    height:285px;
+    height:300px;
     width:200px;
     text-align: center;
     margin-right: 30px;
