@@ -685,7 +685,8 @@ footer .links .main-links a{
     }
     .section.eight .inline>div{
         padding:10px 0;
-        width: 145px;
+        width:49%;
+        min-width: 145px;
     }
     .section.eight .inline>div .icon{
         height:30px;
