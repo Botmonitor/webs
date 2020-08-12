@@ -62,3 +62,10 @@ window.addEventListener('resize',function(){
 function openmenu(item){
     item.classList.toggle('active');
 }
+
+window.addEventListener('load',async function(){
+    document.getElementById("preloader").style.opacity="0";
+    await new Promise(r => setTimeout(r, 300));
+    document.getElementById("preloader").style.display="none";
+
+})

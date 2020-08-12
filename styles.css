@@ -11,6 +11,46 @@ body,html{
     font-family: 'Montserrat',sans-serif;
 }
 
+#preloader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+    background: #000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.loader {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -13px;
+	margin-left: -13px;
+	border-radius: 60px;
+	animation: loader 0.8s linear infinite;
+}
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+	50% {
+		transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+	100% {
+		transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
+
 header{
     display: flex;
     height:64px;
@@ -161,6 +201,10 @@ button{
     outline: 0;
     cursor: pointer;
 }
+button:hover{
+    color:white;
+    background-color: #000;
+}
 
 .section.top button, .section.five button{
     border: 0.5px solid white;
@@ -168,15 +212,18 @@ button{
     margin: 30px 10px;
     margin-top: 10px;
 }
+.section.top button:hover, .section.five button:hover{
+    background-color: white;
+    color:#000;
+}
 
 button.blue-highlight, .section.top button.blue-highlight{
-    background-image: linear-gradient(120deg,#6D13D6,#18E1F9) ;
+    background-image: linear-gradient(120deg,#6D13D6,#18E1F9);
     border: none;
     padding: 10.5px 20.5px;
     color:white;
     border: none;
 }
-
 
 .section.two{
     padding:5vw 10vw;
@@ -312,7 +359,8 @@ button.blue-highlight, .section.top button.blue-highlight{
     justify-content: center;
 }
 .icon img{
-    height:30px;
+    height:100%;
+    width:100%;
 }
 .section.five{
     padding:5vw 10vw;
