@@ -682,8 +682,8 @@ footer .links .main-links a{
         grid-template-rows: max-content max-content;
     }
     .section.eight{
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .section.eight .inline>div{
         padding:10px 0;
@@ -732,6 +732,10 @@ footer .links .main-links a{
         display: flex;
         flex-direction: column;
     }
+    .section.eight{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
 }
 @media screen and (max-width:300px){
     footer .links{
@@ -743,5 +747,157 @@ footer .links .main-links a{
     footer .links .main-links{
         padding:10px 0;
         grid-column: span 1;
+    }
+}
+
+@media screen and (min-width:1300px){
+    .gallery-cell{
+        height:30vw;
+    }
+    .section.two .container{
+        grid-auto-rows: 30vw;
+    }
+    .section.eight .inline{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .section.eight .inline > div{
+        width:100%;
+    }
+}
+@media screen and (min-width:2000px){
+    header{
+        height:100px;
+    }
+    header nav li{
+        font-size: 1.2rem;
+    }
+    .section.top .content h1{
+        font-size: 4rem;
+    }
+    .section.top .content p{
+        font-size: 1.5rem;
+    }
+    button{
+        padding:20px 60px;
+        font-size: 1.3rem;
+        border-width: 3px;
+    }
+    .section.top button, .section.five button{
+        margin: 50px 30px;
+        margin-top: 30px;
+        border-width: 2px;
+    }
+    button.blue-highlight, .section.top button.blue-highlight{
+        padding: 21px 61px;
+    }
+    .section.two::before{
+        height:100px;
+        border-radius: 0 0 100px 0;
+    }
+    .section.two .container > div::after{
+        max-height: 50px;
+        max-width: 50px;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    .section.three .content small, .section.four small, .section.five small, .section.six small, .section.eight small, .section.nine small{
+        font-size: large;
+    }
+    .section.three .content h1, .section.four h1{
+        max-width: 500px;
+    }
+    .icon{
+        height:100px;
+        width:100px;
+    }
+    .section.three .content .inline >div p{
+        font-size: 1.5rem;
+    }
+    .section.four .inline >div h4{
+        font-size: 1.8rem;
+    }
+    .section.four .inline >div p{
+        font-size: 1.3rem;
+    }
+    .section.five .grid p{
+        font-size: 1.5rem;
+    }
+    .section.five h2{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    .section.seven{
+        height:500px;
+        margin-bottom: -100px;
+    }
+    .profile-gallery-cell{
+        height:600px;
+        width:400px;
+        margin-right: 60px;
+    }
+    .profile-gallery-cell .dot{
+        height:60px;
+        width:60px;
+    }
+    .profile-gallery-cell h3,.profile-gallery-cell h5{
+        margin: 10px;
+    }
+    .profile-gallery-cell h3{
+        font-size: 2.5rem;
+    }
+    .profile-gallery-cell h5{
+        font-size: 1.7rem;
+    }
+    .profile-gallery-cell>div:first-child{
+        height:360px;
+    }
+    .profile-gallery-cell>div:last-child{
+        padding-bottom: 60px;
+        padding-top: 10px;
+    }
+    .section.eight .icon{
+        height:100px;
+        width:100px;
+    }
+    .section.eight .inline>div>div h5{
+        font-size: 2.5rem;
+    }
+    .section.eight .inline>div>div p{
+        margin-top: 10px;
+        font-size: 1.8rem;
+    }
+    .card-content h3{
+        font-size: 3rem;
+    }
+    .card-content h5{
+        font-size: 2rem;
+    }
+    .card-content h6{
+        font-size: 1.7rem;
+    }
+    .card-campaign .profile img{
+        height:80px;
+        width:80px;
+    }
+    .card-campaign .profile{
+        margin: 40px 0;
+    }
+    footer img{
+        width:200px;
+    }
+    footer .links p{
+        font-size: 1.8rem;
+    }
+    footer .links a{
+        font-size: 1.5rem;
+    }
+    .section.nine .buttons div{
+        height: 80px;
+        width:80px;
+        font-size: 2.4rem;
     }
 }
